@@ -1,0 +1,70 @@
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font-size: 18px;
+    --margin: 25px;
+}
+
+.card {
+    background-color: var(--Very-dark-blue-card-BG);
+    border-radius: 16px;
+    max-width: 350px;
+    padding: 20px;
+    box-shadow: 0 11px 7px 11px #00000007;
+    margin: auto;
+    position: relative;
+    cursor: default;
+    overflow: hidden;
+    transition: 0.15s;
+    color: var(--Soft-blue);
+    box-shadow: 0 0 0 0 #00000007;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    background-color: rgba(231, 231, 231, 0.199);
+    z-index: 50;
+    transform: translate(-100%, -100%) rotate(30deg);
+    transition: 1.2s;
+    border-radius: 16px;
+}
+
+.card:hover::after {
+    transform: translate(100%, 100%) rotate(30deg);
+}
+
+.top {
+    position: relative;
+    z-index: 99;
+}
+
+.top::after {
+    content: url('../images/icon-view.svg');
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /* background-color: hsla(178, 100%, 50%, 0.493); */
+    background-color: rgba(27, 94, 152, 0.68);
+    opacity: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.top:hover::after {
+    opacity: 100%;
+}
