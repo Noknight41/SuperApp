@@ -1,6 +1,6 @@
 import React from "react";
 
-import { AppLayout } from "components";
+import { AppLayout } from "layouts";
 
 function CalculatorPage() {
   return <AppLayout pageName="Calculator">s</AppLayout>;

@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import { CustomerLayout, Headline, AppCard } from "components";
+import { Headline, AppCard } from "components";
+import { CustomerLayout } from "layouts";
 
 function GamesAppPage() {
   const navigate = useNavigate();

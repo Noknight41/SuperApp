@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
-import { AppLayout } from "components";
+import { AppLayout } from "layouts";
 import { firestore, firebase, auth } from "services/firebase";
 
 import { ToDoInput, ToDoList, ToDoUtils } from "./components";

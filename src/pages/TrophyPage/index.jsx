@@ -1,7 +1,7 @@
 import React from "react";
 
 import Equilibrium from "assets/images/image-equilibrium.jpg";
-import { AppLayout } from "components";
+import { AppLayout } from "layouts";
 import { auth } from "services/firebase";
 
 import { TrophyCard } from "./components";

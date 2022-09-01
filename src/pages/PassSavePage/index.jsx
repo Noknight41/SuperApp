@@ -2,7 +2,7 @@ import React from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useNavigate } from "react-router-dom";
 
-import { AppLayout } from "components";
+import { AppLayout } from "layouts";
 import { auth, firestore } from "services/firebase";
 
 import { Password } from "./components";

@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-import { HomeLayout } from "components";
+import { HomeLayout } from "layouts";
 
 function HomePage() {
   return (

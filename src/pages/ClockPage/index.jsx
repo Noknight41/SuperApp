@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Select from "react-select";
 
-import { AppLayout } from "components";
 import data from "data";
 import utils from "helpers/utils";
+import { AppLayout } from "layouts";
 
 import {
   AnalogClock,

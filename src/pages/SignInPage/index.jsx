@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 
-import { LoginLayout, SignIn } from "components";
+import { SignIn } from "components";
+import { LoginLayout } from "layouts";
 import { auth, signInWithGoogle } from "services/firebase";
 
 function App() {

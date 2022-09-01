@@ -1,6 +1,7 @@
 import React from "react";
 
-import { AppLayout, Headline } from "components";
+import { Headline } from "components";
+import { AppLayout } from "layouts";
 import { auth, firestore } from "services/firebase";
 
 import { PassForm, PassGen } from "./components";

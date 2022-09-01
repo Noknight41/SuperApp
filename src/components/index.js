@@ -3,12 +3,6 @@ export { default as Auth } from "./Auth";
 export { default as SignOut } from "./SignOut";
 export { default as SignIn } from "./SignIn";
 
-// Layout
-export { default as LoginLayout } from "./LoginLayout";
-export { default as HomeLayout } from "./HomeLayout";
-export { default as CustomerLayout } from "./CustomerLayout";
-export { default as AppLayout } from "./AppLayout";
-
 // Generic
 export { default as AppCard } from "./AppCard";
 export { default as Button } from "./Button";

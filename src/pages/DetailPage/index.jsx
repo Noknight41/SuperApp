@@ -1,6 +1,7 @@
 import React from "react";
 
-import { AppLayout, CollapseMarkdown } from "components";
+import { CollapseMarkdown } from "components";
+import { AppLayout } from "layouts";
 
 class DetailPage extends React.Component {
   constructor(props) {
