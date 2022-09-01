@@ -2,8 +2,10 @@ import React from "react";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useNavigate } from "react-router-dom";
 
-import { AppLayout, CollapseMarkdown } from "components";
+import { AppLayout } from "components";
 import { auth, firestore } from "services/firebase";
+
+import { Password } from "./components";
 
 function PassSavePage() {
   const navigate = useNavigate();
@@ -19,9 +21,11 @@ function PassSavePage() {
         <h2 className="text-2xl font-bold md:text-3xl mt-10">My Password</h2>
         <div className="w-[60%] grid grid-cols-passcard gap-5 dead">
           {(pws || []).map((password) => (
-            <CollapseMarkdown title={password.name} haveIcon={false}>
-              {password.password}
-            </CollapseMarkdown>
+            <Password
+              name={password.name}
+              password={password.password}
+              id={password.id}
+            />
           ))}
           <button
             onClick={() => navigate("/pass/gen")}

@@ -18,12 +18,12 @@ function TrophyCard(props) {
           />
         </section>
         <section>
-          <h1 className="text-white font-[600] text-[27px] my-[25px] hover:text-Cyan">
+          <h1 className="text-white font-[600] text-[27px] my-[25px] hover:text-cyan">
             Equilibrium #3429
           </h1>
           <p>Our Equilibrium collection promotes balance and calm.</p>
           <div className="flex flex-row justify-between items-center mt-[25px]">
-            <div className="flex flex-row items-center text-Cyan">
+            <div className="flex flex-row items-center text-cyan">
               <img src={Ethereum} alt="ethereum" className="mr-2" />
               <p>0.041 ETH</p>
             </div>
@@ -37,11 +37,11 @@ function TrophyCard(props) {
             <img
               src={avatar}
               alt="avatar"
-              className="w-[44px] h-[44px] mr-[25px] rounded-[50%] hover:border-Cyan hover:border-2 hover:w-[48px] hover:h-[48px]"
+              className="w-[44px] h-[44px] mr-[25px] rounded-[50%] hover:border-cyan hover:border-2 hover:w-[48px] hover:h-[48px]"
             />
             <p>
               Creation of{" "}
-              <span className="text-white hover:text-Cyan">{creator}</span>
+              <span className="text-white hover:text-cyan">{creator}</span>
             </p>
           </footer>
         </section>

@@ -17,14 +17,14 @@ function PersonalAppPage() {
           <AppCard icon="⌛" name="Clock" onClick={() => navigate("/clock")} />
           <AppCard icon="🗂" name="Dart" onClick={() => navigate("/todo")} />
           <AppCard
-            icon="🔓"
+            icon="🔐"
             name="Pass Savior"
             onClick={() => navigate("/pass")}
           />
           <AppCard
             icon="💾"
             name="Calculator"
-            onClick={() => navigate("/clock")}
+            onClick={() => navigate("/calculator")}
           />
         </div>
       </div>

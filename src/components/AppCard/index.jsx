@@ -21,8 +21,7 @@ class AppCard extends React.PureComponent {
           <div className="absolute opacity-0 lg:group-hover:opacity-100 lg:group-hover:relative">
             <p className="text-2xl font-bold">{name}</p>
             <p className="mt-4 text-lg font-medium leading-relaxed">
-              Datepicker input using Flatpickr with a button that clears the
-              selected date.
+              {description}
             </p>
           </div>
         </div>
@@ -42,7 +41,7 @@ AppCard.defaultProps = {
   onClick: () => {},
   icon: "🍆",
   name: "",
-  description: "",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 };
 
 export default AppCard;

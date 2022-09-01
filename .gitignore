@@ -2,7 +2,6 @@
 
 .eslintcache
 /.firebase
-firebase.json
 
 # dependencies
 /node_modules
@@ -17,6 +16,7 @@ firebase.json
 
 # misc
 .DS_Store
+firebase.json
 .firebaserc
 .env
 .env.local

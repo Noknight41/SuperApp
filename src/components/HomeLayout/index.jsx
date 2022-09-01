@@ -31,6 +31,7 @@ function HomeLayout(props) {
           <button
             type="button"
             className="text-blue-600 py-1 font-light text-xl basic-3"
+            onClick={() => navigate("/games")}
           >
             <div className="basic-3 pb-1">Games</div>
           </button>

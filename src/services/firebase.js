@@ -3,12 +3,12 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "superchat-67c4a.firebaseapp.com",
   projectId: "superchat-67c4a",
   storageBucket: "superchat-67c4a.appspot.com",
   messagingSenderId: "547083965643",
-  appId: process.env.REACT_APP_APP_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 firebase.initializeApp(firebaseConfig);

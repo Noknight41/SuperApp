@@ -2,16 +2,18 @@ import {
   SignInPage,
   HomePage,
   PersonalAppPage,
-  DeveloperAppPage,
+  GamesAppPage,
   SocialAppPage,
+  DeveloperAppPage,
   ProfilePage,
   ClockPage,
   ChatPage,
   ToDoPage,
-  TrophyPage,
-  DetailPage,
   PassSavePage,
   PassGenPage,
+  CalculatorPage,
+  TrophyPage,
+  DetailPage,
 } from "pages";
 
 const routes = [
@@ -31,13 +33,18 @@ const routes = [
     isProtected: true,
   },
   {
-    path: "/dev",
-    component: DeveloperAppPage,
+    path: "/games",
+    component: GamesAppPage,
     isProtected: true,
   },
   {
     path: "/social",
     component: SocialAppPage,
+    isProtected: true,
+  },
+  {
+    path: "/dev",
+    component: DeveloperAppPage,
     isProtected: true,
   },
   {
@@ -73,6 +80,11 @@ const routes = [
   {
     path: "/pass/gen",
     component: PassGenPage,
+    isProtected: true,
+  },
+  {
+    path: "/calculator",
+    component: CalculatorPage,
     isProtected: true,
   },
   {

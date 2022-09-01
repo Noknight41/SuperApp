@@ -15,6 +15,16 @@ function DeveloperAppPage() {
         />
         <div className="w-full mt-20 grid grid-cols-appcard gap-5">
           <AppCard
+            icon="🛠"
+            name="Developer Tools"
+            onClick={() => navigate("/detail")}
+          />
+          <AppCard
+            icon="📍"
+            name="Project Timeline"
+            onClick={() => navigate("/detail")}
+          />
+          <AppCard
             icon="📃"
             name="Project Detail"
             onClick={() => navigate("/detail")}

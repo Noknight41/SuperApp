@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -9,13 +10,14 @@ module.exports = {
         "dark-mode-body": "rgb(31,41,55)",
         "first-color": "#6464CB",
         "Soft-blue": "hsl(215, 51%, 70%)",
-        Cyan: "hsl(178, 100%, 50%)",
+        cyan: "hsl(178, 100%, 50%)",
         "Very-dark-blue": "hsl(217, 54%, 11%)",
         "Very-dark-blue-card-BG": "hsl(216, 50%, 16%)",
         "Very-dark-blue-line": "hsl(215, 32%, 27%)",
         golden: "hsl(41, 100%, 76%)",
         "golden-faded": "hsl(41, 100%, 50%)",
         "neon-green": "hsl(150, 100%, 66%)",
+        calculator: "#3a4764",
       },
       animation: {
         "spin-second": "spin 60s linear infinite",
