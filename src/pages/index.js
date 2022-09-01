@@ -22,4 +22,5 @@ export { default as CalculatorPage } from "./CalculatorPage";
 export { default as ChatPage } from "./ChatPage";
 
 // Developer
-export { default as DetailPage } from "./DetailPage";
+export { default as ProjectDetailPage } from "./ProjectDetailPage";
+export { default as ProjectTimelinePage } from "./ProjectTimelinePage";

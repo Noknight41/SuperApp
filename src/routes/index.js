@@ -13,7 +13,8 @@ import {
   PassGenPage,
   CalculatorPage,
   TrophyPage,
-  DetailPage,
+  ProjectDetailPage,
+  ProjectTimelinePage,
 } from "pages";
 
 const routes = [
@@ -68,8 +69,13 @@ const routes = [
     isProtected: true,
   },
   {
+    path: "/timeline",
+    component: ProjectTimelinePage,
+    isProtected: true,
+  },
+  {
     path: "/detail",
-    component: DetailPage,
+    component: ProjectDetailPage,
     isProtected: true,
   },
   {

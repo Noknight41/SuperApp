@@ -3,7 +3,7 @@ import React from "react";
 import { CollapseMarkdown } from "components";
 import { AppLayout } from "layouts";
 
-class DetailPage extends React.Component {
+class ProjectDetailPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -106,4 +106,4 @@ class DetailPage extends React.Component {
   }
 }
 
-export default DetailPage;
+export default ProjectDetailPage;

@@ -23,7 +23,7 @@ function DeveloperAppPage() {
           <AppCard
             icon="📍"
             name="Project Timeline"
-            onClick={() => navigate("/detail")}
+            onClick={() => navigate("/timeline")}
           />
           <AppCard
             icon="📃"

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Week 33 - 2022",
+    "work": [
+      "Start on the project Super App.",
+      "Create Clock Page.",
+      "Integrated Chat Page with Video.",
+      "Integrated Sign In with Firebase.",
+      "Create Project Detail Page."
+    ]
+  },
+  {
+    "title": "Week 34 - 2022",
+    "work": [
+      "Create Trophy Page.",
+      "Update Clock Page with timezones.",
+      "Create Pass Generator Page.",
+      "Create To-do Page.",
+      "Add Advice Generator feature.",
+      "Create Home Page with Grid"
+    ]
+  },
+  {
+    "title": "Week 35 - 2022",
+    "work": [
+      "Fix Light / Dark mode native to browser",
+      "Split Mini-apps into 4 categories",
+      "Create Pass Save Page.",
+      "Create Project Timeline Page."
+    ]
+  }
+]
