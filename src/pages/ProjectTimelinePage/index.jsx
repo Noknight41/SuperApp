@@ -4,7 +4,7 @@ import { Chrono } from "react-chrono";
 import data from "data/timeline.json";
 import { AppLayout } from "layouts";
 
-function ProjectTimelinePage(props) {
+function ProjectTimelinePage() {
   return (
     <AppLayout pageName="Project Timeline">
       <div className="space-y-4 w-full flex flex-col items-center justify-center gap-5 pb-10">

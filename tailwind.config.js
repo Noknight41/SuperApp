@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        spartan: "'Spartan', sans-serif",
+      },
       colors: {
         "hue-green": "rgb(36, 243, 147)",
         "light-mode-body": "#ECECF3",
@@ -18,6 +21,12 @@ module.exports = {
         "golden-faded": "hsl(41, 100%, 50%)",
         "neon-green": "hsl(150, 100%, 66%)",
         calculator: "#3a4764",
+        "calculator-key": "hsl(30, 25%, 89%)",
+        "calculator-sd-key": "hsl(28, 16%, 65%)",
+        "calculator-del": "#182034",
+        "calculator-sd-del": "hsl(224, 28%, 35%)",
+        "calculator-eq": "#d03f2f",
+        "calculator-sd-eq": "hsl(6, 70%, 34%)",
       },
       animation: {
         "spin-second": "spin 60s linear infinite",
@@ -56,10 +65,12 @@ module.exports = {
         app: "240px auto auto 240px",
         appcard: "repeat(auto-fill, minmax(280px, 1fr))",
         passcard: "repeat(auto-fill, minmax(300px, 3fr))",
+        calbutton: "repeat(4, 70px)",
       },
       gridTemplateRows: {
         // Simple 16 column grid
         app: "repeat(4, 25%)",
+        calbutton: "repeat(5, 70px)",
       },
       height: {
         home: "calc(90% - 2.5rem)",
