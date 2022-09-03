@@ -24,7 +24,7 @@ const routes = [
     isProtected: false,
   },
   {
-    path: "/home",
+    path: "/",
     component: HomePage,
     isProtected: true,
   },

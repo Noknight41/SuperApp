@@ -20,7 +20,7 @@ function AppLayout(props) {
           <button
             type="button"
             className="pr-5 text-blue-600 font-bold border-r border-blue-500"
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
           >
             Super{" "}
             <span className=" text-slate-100 font-bold bg-blue-600 px-1 ml-1 rounded-md drop-shadow-lg ">

@@ -13,7 +13,7 @@ function Auth(props) {
   useEffect(() => {
     if (!loading) {
       if (user) {
-        navigate("/home");
+        navigate("/");
       } else {
         navigate("/signin");
       }
