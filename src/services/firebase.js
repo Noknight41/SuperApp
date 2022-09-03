@@ -18,12 +18,12 @@ const firestore = firebase.firestore();
 
 const signInWithGoogle = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
-  auth.signInWithPopup(provider);
+  auth.signInWithRedirect(provider);
 };
 
 const signInWithFacebook = () => {
   const provider = new firebase.auth.FacebookAuthProvider();
-  auth.signInWithPopup(provider);
+  auth.signInWithRedirect(provider);
 };
 
 export { auth, firestore, firebase, signInWithGoogle, signInWithFacebook };
