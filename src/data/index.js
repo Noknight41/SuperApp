@@ -427,3 +427,5 @@ const Number = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const Special = ["^", "!", "@", "*", "#", "&", "%", "$"];
 
 export default { months, worldTimezones, Upper, Lower, Number, Special };
+
+export { default as timeline } from "./timeline.json";

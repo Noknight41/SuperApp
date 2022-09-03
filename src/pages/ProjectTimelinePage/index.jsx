@@ -1,7 +1,7 @@
 import React from "react";
 import { Chrono } from "react-chrono";
 
-import data from "data/timeline.json";
+import { timeline } from "data";
 import { AppLayout } from "layouts";
 
 function ProjectTimelinePage() {
@@ -13,7 +13,7 @@ function ProjectTimelinePage() {
         </h2>
         <div className="relative overflow-scroll w-[900px] h-[700px] dead">
           <Chrono
-            items={data}
+            items={timeline}
             mode="VERTICAL_ALTERNATING"
             cardHeight={150}
             cardWidth={600}
@@ -26,7 +26,7 @@ function ProjectTimelinePage() {
               titleColorActive: "black",
             }}
           >
-            {data.map((item) => (
+            {timeline.map((item) => (
               <div className="text-black h-full">
                 {item.work.map((work) => (
                   <h1>{work}</h1>

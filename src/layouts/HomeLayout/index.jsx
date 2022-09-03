@@ -1,19 +1,24 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 import DiceImage from "assets/images/icon-dice.svg";
 import { AvatarDropDown } from "components";
+import { useDetectOutsideClick } from "hooks";
 import AdviceAPI from "services/advice.service";
 
 function HomeLayout(props) {
   const navigate = useNavigate();
   const { children } = props;
 
+  const dropdownRef = useRef(null);
+  const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+  const onClickOutside = () => setIsActive(!isActive);
+
   return (
     <div className="min-h-[100vh] h-full bg-transparent">
-      <nav className="bg-transparent min-h-[8vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
+      <nav className="bg-transparent min-h-[10vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
         <div className="flex justify-between items-center gap-x-7">
           <h1 className="text-blue-600 font-bold mr-8">
             Super{" "}
@@ -54,7 +59,7 @@ function HomeLayout(props) {
           <button
             type="button"
             content="Home"
-            className="bg-blue-600 p-2 justify-center rounded-[50%] hover:shadow-dice transform"
+            className="bg-blue-600 p-2 justify-center rounded-[50%] hover:shadow-dice transition-all duration-100"
             onClick={async () => {
               toast.promise(
                 AdviceAPI.getAdvice(),
@@ -73,7 +78,11 @@ function HomeLayout(props) {
           >
             <img src={DiceImage} alt="Dice" />
           </button>
-          <AvatarDropDown navigate={navigate} />
+          <AvatarDropDown
+            onClickOutside={onClickOutside}
+            isActive={isActive}
+            dropdownRef={dropdownRef}
+          />
         </div>
       </nav>
       {children}

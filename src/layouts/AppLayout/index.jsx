@@ -1,16 +1,21 @@
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { AvatarDropDown } from "components";
+import { useDetectOutsideClick } from "hooks";
 
 function AppLayout(props) {
   const { pageName, children } = props;
   const navigate = useNavigate();
 
+  const dropdownRef = useRef(null);
+  const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
+  const onClickOutside = () => setIsActive(!isActive);
+
   return (
     <div className="min-h-[100vh] h-full">
-      <div className="bg-transparent min-h-[8vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
+      <div className="bg-transparent min-h-[10vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
         <div className="flex justify-between items-center">
           <button
             type="button"
@@ -26,7 +31,11 @@ function AppLayout(props) {
         </div>
 
         <div className="flex justify-between items-center">
-          <AvatarDropDown navigate={navigate} />
+          <AvatarDropDown
+            onClickOutside={onClickOutside}
+            isActive={isActive}
+            dropdownRef={dropdownRef}
+          />
         </div>
       </div>
       {children}

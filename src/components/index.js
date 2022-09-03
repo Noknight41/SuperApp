@@ -1,6 +1,5 @@
 // User Authentication
 export { default as Auth } from "./Auth";
-export { default as SignOut } from "./SignOut";
 export { default as SignIn } from "./SignIn";
 
 // Generic

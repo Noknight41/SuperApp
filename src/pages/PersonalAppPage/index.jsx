@@ -23,7 +23,7 @@ function PersonalAppPage() {
             onClick={() => navigate("/pass")}
           />
           <AppCard
-            icon="💾"
+            icon="🧮"
             name="Calculator"
             onClick={() => navigate("/calculator")}
           />
