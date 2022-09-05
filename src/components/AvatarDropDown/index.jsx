@@ -20,7 +20,7 @@ function AvatarDropDown(props) {
         <img
           className="rounded-[50%] w-[50px]"
           src={
-            auth.currentUser?.photoURL || "https://placeimg.com/192/192/people"
+            auth?.currentUser?.photoURL || "https://placeimg.com/192/192/people"
           }
           alt="User avatar"
         />
@@ -38,7 +38,7 @@ function AvatarDropDown(props) {
           <img
             className="rounded-[50%] w-[40px]"
             src={
-              auth.currentUser?.photoURL ||
+              auth?.currentUser?.photoURL ||
               "https://placeimg.com/192/192/people"
             }
             alt="User avatar"
@@ -63,7 +63,12 @@ function AvatarDropDown(props) {
 AvatarDropDown.propTypes = {
   onClickOutside: PropTypes.func.isRequired,
   isActive: PropTypes.bool.isRequired,
-  dropdownRef: PropTypes.func.isRequired,
+  dropdownRef: PropTypes.oneOfType([
+    // Either a function
+    PropTypes.func,
+    // Or the instance of a DOM native element (see the note about SSR)
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]).isRequired,
 };
 
 export default AvatarDropDown;
