@@ -3,13 +3,12 @@ export { default as HomePage } from "./HomePage";
 
 // Customer - Orientation
 export { default as PersonalAppPage } from "./PersonalAppPage";
-export { default as GamesAppPage } from "./GamesAppPage";
+export { default as GameAppPage } from "./GameAppPage";
 export { default as SocialAppPage } from "./SocialAppPage";
 export { default as DeveloperAppPage } from "./DeveloperAppPage";
 
 // Mini App
 export { default as ProfilePage } from "./ProfilePage";
-export { default as TrophyPage } from "./TrophyPage";
 
 // Personal
 export { default as ClockPage } from "./ClockPage";
@@ -18,9 +17,15 @@ export { default as PassGenPage } from "./PassGenPage";
 export { default as PassSavePage } from "./PassSavePage";
 export { default as CalculatorPage } from "./CalculatorPage";
 
+// Games
+export { default as WordlePage } from "./WordlePage";
+export { default as Two048Page } from "./Two048Page";
+
 // Social
+export { default as TrophyPage } from "./TrophyPage";
 export { default as ChatPage } from "./ChatPage";
 
 // Developer
+export { default as DeveloperToolsPage } from "./DeveloperToolsPage";
 export { default as ProjectDetailPage } from "./ProjectDetailPage";
 export { default as ProjectTimelinePage } from "./ProjectTimelinePage";

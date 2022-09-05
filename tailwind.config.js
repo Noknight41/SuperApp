@@ -10,8 +10,8 @@ module.exports = {
       },
       colors: {
         "hue-green": "rgb(36, 243, 147)",
-        "light-mode-body": "#ECECF3",
-        "dark-mode-body": "rgb(31,41,55)",
+        "light-mode-body": "#fafafa",
+        "dark-mode-body": "#212121",
         "dark-mode-shadow": "rgb(29,39,55)",
         "first-color": "#6464CB",
         "Soft-blue": "hsl(215, 51%, 70%)",

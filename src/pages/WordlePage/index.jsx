@@ -1,17 +1,16 @@
 import React from "react";
-import "./index.css";
 
 import { UnderConstruction } from "components";
-import { HomeLayout } from "layouts";
+import { AppLayout } from "layouts";
 
-function HomePage() {
+function WordlePage() {
   return (
-    <HomeLayout>
+    <AppLayout pageName="Wordle">
       <div className="flex items-center justify-center min-h-[80vh]">
         <UnderConstruction />
       </div>
-    </HomeLayout>
+    </AppLayout>
   );
 }
 
-export default HomePage;
+export default WordlePage;

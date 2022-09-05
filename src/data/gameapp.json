@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "🔤",
+    "name": "Wordle",
+    "route": "/game/wordle"
+  },
+  {
+    "icon": "🔢",
+    "name": "2048",
+    "route": "/game/2048"
+  }
+]

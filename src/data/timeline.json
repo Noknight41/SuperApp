@@ -26,7 +26,13 @@
       "Fix Light / Dark mode native to browser",
       "Split Mini-apps into 4 categories",
       "Create Pass Save Page.",
-      "Create Project Timeline Page."
+      "Create Project Timeline Page.",
+      "Create Calculator Page.",
+      "Deploy Testing"
     ]
+  },
+  {
+    "title": "Week 36 - 2022",
+    "work": []
   }
 ]

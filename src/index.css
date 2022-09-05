@@ -20,7 +20,7 @@ body {
   /* Dark theme styles go here */
   body {
     font: black;
-    background-color: #ECECF3;
+    background-color:	#fafafa;
   }
 }
 
@@ -28,7 +28,7 @@ body {
   /* Dark theme styles go here */
   body {
     font: white;
-    background-color: rgb(31,41,55);
+    background-color: #212121;
   }
 }
 

@@ -3,6 +3,7 @@ export { default as Auth } from "./Auth";
 export { default as SignIn } from "./SignIn";
 
 // Generic
+export { default as UnderConstruction } from "./UnderConstruction";
 export { default as AppCard } from "./AppCard";
 export { default as Button } from "./Button";
 export { default as Contribution } from "./Contribution";

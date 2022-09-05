@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Headline, AppCard } from "components";
+import { personalapp } from "data";
 import { CustomerLayout } from "layouts";
 
 function PersonalAppPage() {
@@ -15,18 +16,13 @@ function PersonalAppPage() {
           allClass="font-[500]"
         />
         <div className="w-full mt-20 grid grid-cols-appcard gap-5">
-          <AppCard icon="⌛" name="Clock" onClick={() => navigate("/clock")} />
-          <AppCard icon="🗂" name="Dart" onClick={() => navigate("/todo")} />
-          <AppCard
-            icon="🔐"
-            name="Pass Savior"
-            onClick={() => navigate("/pass")}
-          />
-          <AppCard
-            icon="🧮"
-            name="Calculator"
-            onClick={() => navigate("/calculator")}
-          />
+          {personalapp.map((per) => (
+            <AppCard
+              icon={per.icon}
+              name={per.name}
+              onClick={() => navigate(per.route)}
+            />
+          ))}
         </div>
       </div>
     </CustomerLayout>

@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Headline, AppCard } from "components";
+import { socialapp } from "data";
 import { CustomerLayout } from "layouts";
 
 function SocialAppPage() {
@@ -15,16 +16,13 @@ function SocialAppPage() {
           allClass="font-[500]"
         />
         <div className="w-full mt-20 grid grid-cols-appcard gap-5">
-          <AppCard
-            icon="🏆"
-            name="Trophy"
-            onClick={() => navigate("/trophy")}
-          />
-          <AppCard
-            icon="💬"
-            name="Chat Room"
-            onClick={() => navigate("/chat")}
-          />
+          {socialapp.map((social) => (
+            <AppCard
+              icon={social.icon}
+              name={social.name}
+              onClick={() => navigate(social.route)}
+            />
+          ))}
         </div>
       </div>
     </CustomerLayout>

@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "⌛",
+    "name": "Clock",
+    "route": "/personal/clock"
+  },
+  {
+    "icon": "🗂",
+    "name": "To-Do App",
+    "route": "/personal/todo"
+  },
+  {
+    "icon": "🔐",
+    "name": "Password Manager",
+    "route": "/personal/password"
+  },
+  {
+    "icon": "🧮",
+    "name": "Calculator",
+    "route": "/personal/calculator"
+  }
+]

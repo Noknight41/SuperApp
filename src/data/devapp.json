@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "🛠",
+    "name": "Developer Tools",
+    "route": "/dev/tools"
+  },
+  {
+    "icon": "📍",
+    "name": "Project Timeline",
+    "route": "/dev/timeline"
+  },
+  {
+    "icon": "📃",
+    "name": "Project Detail",
+    "route": "/dev/detail"
+  }
+]

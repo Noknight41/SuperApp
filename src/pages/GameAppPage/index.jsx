@@ -2,9 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Headline, AppCard } from "components";
+import { gameapp } from "data";
 import { CustomerLayout } from "layouts";
 
-function GamesAppPage() {
+function GameAppPage() {
   const navigate = useNavigate();
   return (
     <CustomerLayout customer="for Games">
@@ -15,12 +16,17 @@ function GamesAppPage() {
           allClass="font-[500]"
         />
         <div className="w-full mt-20 grid grid-cols-appcard gap-5">
-          <AppCard icon="🔤" name="Wordle" onClick={() => navigate("/clock")} />
-          <AppCard icon="🔢" name="2048" onClick={() => navigate("/todo")} />
+          {gameapp.map((game) => (
+            <AppCard
+              icon={game.icon}
+              name={game.name}
+              onClick={() => navigate(game.route)}
+            />
+          ))}
         </div>
       </div>
     </CustomerLayout>
   );
 }
 
-export default GamesAppPage;
+export default GameAppPage;

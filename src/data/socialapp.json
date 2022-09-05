@@ -1,0 +1,12 @@
+[
+  {
+    "icon": "🏆",
+    "name": "Trophy",
+    "route": "/social/trophy"
+  },
+  {
+    "icon": "💬",
+    "name": "Chat Room",
+    "route": "/social/chat"
+  }
+]
