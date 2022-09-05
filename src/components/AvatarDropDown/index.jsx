@@ -22,6 +22,7 @@ function AvatarDropDown(props) {
           src={
             auth?.currentUser?.photoURL || "https://placeimg.com/192/192/people"
           }
+          referrerpolicy="no-referrer"
           alt="User avatar"
         />
       </button>
@@ -41,6 +42,7 @@ function AvatarDropDown(props) {
               auth?.currentUser?.photoURL ||
               "https://placeimg.com/192/192/people"
             }
+            referrerpolicy="no-referrer"
             alt="User avatar"
           />
           <span className="text-[18px]">

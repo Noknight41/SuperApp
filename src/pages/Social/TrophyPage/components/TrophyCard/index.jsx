@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Clock from "assets/images/icon-clock.svg";
-import Ethereum from "assets/images/icon-ethereum.svg";
+import Clock from "assets/icons/clock-fill.svg";
+import Ethereum from "assets/icons/ethereum.svg";
 
 function TrophyCard(props) {
   const { image, avatar, creator, rarity } = props;

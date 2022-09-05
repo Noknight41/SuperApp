@@ -16,9 +16,7 @@ function ChatMessage(props) {
       <img
         className="w-10 h-10 rounded-[50%] my-[2px] mx-[5px]"
         alt="Not Found"
-        src={
-          photoURL || "https://api.adorable.io/avatars/23/abott@adorable.png"
-        }
+        src={photoURL}
         referrerpolicy="no-referrer"
       />
       <p

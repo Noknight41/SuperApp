@@ -27,7 +27,7 @@ function CustomerLayout(props) {
               App
             </span>
           </button>
-          <h1 className="px-5 text-blue-600 font-bold">{customer}</h1>
+          <h1 className="px-5 text-blue-600 font-bold dead">{customer}</h1>
         </div>
 
         <div className="flex justify-between items-center gap-x-5">

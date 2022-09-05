@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import DiceImage from "assets/images/icon-dice.svg";
+import DiceImage from "assets/icons/dice-fill.svg";
 import { AvatarDropDown } from "components";
 import { useDetectOutsideClick } from "hooks";
 import AdviceAPI from "services/advice.service";

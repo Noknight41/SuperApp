@@ -31,7 +31,7 @@ function SignInSection(props) {
         <div className="h-[10%]">
           <h1 className="text-[2rem] font-black">Sign In to Super App</h1>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-col">
           <button
             type="button"
             className="flex flex-row gap-x-3 text-gray-900 bg-light-mode-body max-w-[400px] my-0 mx-auto text-xl py-4 px-8 text-center border border-indigo-500/50 rounded-lg"

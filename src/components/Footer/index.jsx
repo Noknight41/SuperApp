@@ -1,6 +1,6 @@
 import React from "react";
 
-class Contribution extends React.Component {
+class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -31,4 +31,4 @@ class Contribution extends React.Component {
   }
 }
 
-export default Contribution;
+export default Footer;
