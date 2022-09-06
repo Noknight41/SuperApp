@@ -25,7 +25,7 @@ function ToDoInput(props) {
   return (
     <form
       onSubmit={pushToDo}
-      className="flex items-center justify-around h-[60px] bg-white w-full"
+      className="flex w-full items-center justify-around h-[60px] font-[700] text-dark-mode-body dark:text-light-mode-body bg-white dark:bg-slate-600"
     >
       <input
         type="checkbox"

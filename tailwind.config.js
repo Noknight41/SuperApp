@@ -12,7 +12,7 @@ module.exports = {
         "hue-green": "rgb(36, 243, 147)",
         "light-mode-body": "#fafafa",
         "dark-mode-body": "#212121",
-        "dark-mode-shadow": "rgb(29,39,55)",
+        "dark-mode-shadow": "#3d3d3d",
         "first-color": "#6464CB",
         "Soft-blue": "hsl(215, 51%, 70%)",
         cyan: "hsl(178, 100%, 50%)",

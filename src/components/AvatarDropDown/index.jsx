@@ -1,12 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { AiOutlineLogout } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
 
 import { auth } from "services/firebase";
 
 function AvatarDropDown(props) {
-  const navigate = useNavigate();
   const { onClickOutside, dropdownRef, isActive } = props;
 
   return (
@@ -27,15 +25,11 @@ function AvatarDropDown(props) {
         />
       </button>
       <nav
-        className={`absolute flex flex-col px-5 py-3 gap-x-10 gap-y-2 min-w-[300px] rounded-3xl bg-white dark:bg-dark-mode-shadow right-[40px] ${
+        className={`absolute flex flex-col px-5 py-3 gap-x-10 gap-y-2 min-w-[300px] rounded-3xl bg-white dark:bg-dark-mode-body right-[40px] ${
           isActive ? "opacity-100 visible" : "opacity-0 hidden"
         }`}
       >
-        <button
-          type="button"
-          className="flex flex-row justify-start gap-x-7 py-3 px-5 items-center min-h-[50px] rounded-xl transition-all hover:bg-light-mode-body dark:hover:bg-slate-700 "
-          onClick={() => navigate("/profile")}
-        >
+        <div className="flex flex-row justify-start gap-x-7 py-3 px-5 items-center min-h-[50px] rounded-xl transition-all hover:bg-light-mode-body dark:hover:bg-dark-mode-shadow ">
           <img
             className="rounded-[50%] w-[40px]"
             src={
@@ -48,10 +42,10 @@ function AvatarDropDown(props) {
           <span className="text-[18px]">
             {auth.currentUser?.displayName || "User"}
           </span>
-        </button>
+        </div>
         <button
           type="button"
-          className="flex flex-row justify-start gap-x-7 py-3 px-5 items-center text-[18px] rounded-xl transition-all hover:bg-light-mode-body dark:hover:bg-slate-700"
+          className="flex flex-row justify-start gap-x-7 py-3 px-5 items-center text-[18px] rounded-xl transition-all hover:bg-light-mode-body dark:hover:bg-dark-mode-shadow"
           onClick={() => auth?.signOut()}
         >
           <AiOutlineLogout />

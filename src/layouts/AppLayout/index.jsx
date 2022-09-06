@@ -15,7 +15,7 @@ function AppLayout(props) {
 
   return (
     <div className="min-h-[100vh] h-full">
-      <div className="bg-transparent min-h-[10vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
+      <div className="bg-transparent min-h-[10vh] border-b border-[#aaaaaa] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
         <div className="flex justify-between items-center">
           <button
             type="button"

@@ -14,7 +14,7 @@ function ToDoList(props) {
     ) : (
       toDoList.map((todo) => (
         <div
-          className="flex items-center justify-around h-[60px] bg-white w-full text-[18px] border-b border-gray-300"
+          className="flex items-center justify-around h-[60px] w-full text-[18px] text-dark-mode-body dark:text-light-mode-body bg-white dark:bg-slate-600 border-b border-gray-700"
           key={todo.id}
         >
           <input

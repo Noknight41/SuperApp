@@ -18,7 +18,7 @@ function HomeLayout(props) {
 
   return (
     <div className="min-h-[100vh] h-full bg-transparent">
-      <nav className="bg-transparent min-h-[10vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
+      <nav className="bg-transparent border-b border-[#aaaaaa] min-h-[10vh] w-full top-0 flex items-center justify-between py-2 px-10 box-border text-[24px] z-10">
         <div className="flex justify-between items-center gap-x-7">
           <h1 className="text-blue-600 font-bold mr-8">
             Super{" "}

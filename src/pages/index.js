@@ -7,9 +7,6 @@ export { default as GameAppPage } from "./Game/GameAppPage";
 export { default as SocialAppPage } from "./Social/SocialAppPage";
 export { default as DeveloperAppPage } from "./Developer/DeveloperAppPage";
 
-// Mini App
-export { default as ProfilePage } from "./User/ProfilePage";
-
 // Personal
 export { default as ClockPage } from "./Personal/ClockPage";
 export { default as ToDoPage } from "./Personal/ToDoPage";

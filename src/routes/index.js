@@ -5,7 +5,6 @@ import {
   GameAppPage,
   SocialAppPage,
   DeveloperAppPage,
-  ProfilePage,
   ClockPage,
   ToDoPage,
   PassSavePage,
@@ -109,11 +108,6 @@ const routes = [
   {
     path: "/personal/calculator",
     component: CalculatorPage,
-    isProtected: true,
-  },
-  {
-    path: "/profile",
-    component: ProfilePage,
     isProtected: true,
   },
 ];
