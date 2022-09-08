@@ -23,6 +23,5 @@ export { default as TrophyPage } from "./Social/TrophyPage";
 export { default as ChatPage } from "./Social/ChatPage";
 
 // Developer
-export { default as DeveloperToolsPage } from "./Developer/DeveloperToolsPage";
 export { default as ProjectDetailPage } from "./Developer/ProjectDetailPage";
 export { default as ProjectTimelinePage } from "./Developer/ProjectTimelinePage";

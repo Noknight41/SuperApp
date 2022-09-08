@@ -14,7 +14,7 @@ class AppCard extends React.PureComponent {
     return (
       <button
         type="button"
-        className="block h-[320px] min-w-[200px] min-h-[200px] group"
+        className="block h-[240px] w-[300px] min-w-[200px] min-h-[200px] group"
         onClick={onClick}
       >
         <div className="relative flex items-center justify-center h-full transition bg-light-mode-body dark:bg-dark-mode-body border-4 border-blue-600 group-hover:-translate-x-2 group-hover:-translate-y-2 rounded-3xl group-hover:shadow-[8px_8px_0_0_rgb(37,99,235)] p-8">

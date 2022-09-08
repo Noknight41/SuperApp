@@ -432,4 +432,3 @@ export { default as timeline } from "./timeline.json";
 export { default as personalapp } from "./personalapp.json";
 export { default as gameapp } from "./gameapp.json";
 export { default as socialapp } from "./socialapp.json";
-export { default as devapp } from "./devapp.json";

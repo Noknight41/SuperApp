@@ -14,7 +14,6 @@ import {
   WordlePage,
   TrophyPage,
   ChatPage,
-  DeveloperToolsPage,
   ProjectDetailPage,
   ProjectTimelinePage,
 } from "pages";
@@ -83,11 +82,6 @@ const routes = [
   {
     path: "/game/wordle",
     component: WordlePage,
-    isProtected: true,
-  },
-  {
-    path: "/dev/tools",
-    component: DeveloperToolsPage,
     isProtected: true,
   },
   {

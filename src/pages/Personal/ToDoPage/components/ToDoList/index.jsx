@@ -8,7 +8,7 @@ function ToDoList(props) {
   return (
     toDoList &&
     (toDoList.length === 0 ? (
-      <div className="flex items-center justify-around h-[150px] bg-white w-full text-[18px]">
+      <div className="flex items-center justify-around h-[150px] bg-white dark:bg-slate-600 border-b border-gray-700 w-full text-[18px]">
         No Todo item left !
       </div>
     ) : (
